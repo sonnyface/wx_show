@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view class="container">
+  <!--轮播图  -->
+  <swiper indicator-dots="true" autoplay="true" duration="500" interval="5000" circular="true">
+    <block wx:for="{{banner}}" wx:key>
+      <swiper-item >
+        <image bindtap="swiper" data-src="{{item}}" src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--公司名字  -->
+  <view class="head">
+    <view class="company">
+      <view class="name">
+        <text class="company-name">泰芒了饮品店</text>   
+      </view>
+      <image class="userinfo-avatar" background-size="cover" mode="aspectFill" src="http://p5zdfyr2y.bkt.clouddn.com/logo.png"></image>
+    </view>
+  </view>
+
+  <!--列表 详情  -->
+  <view class="gjtit">
+    <text class="tit" style="color:#888">联系方式</text>
+  </view>
+  <view class="alllist">
+    <view class="list" bindtap="getLocation">
+      <image class="l-icon" backgrond-size="100%" src="../../image/ads.png"></image>
+      <view class="l-add">
+        <text class="textAdd">平顶山市新华区和平路步行街中兴路30号</text>
+      </view>
+      <image class="l-icon" backgrond-size="100%" src="../../image/right.png"></image>
+    </view>
+    <view class="tel">
+      <view class="telist" bindtap="makePhoneCall01">
+        <image class="l-icon" background-size="100%" src="../../image/phone.png"></image>
+        <text class="l-add"> 15137522873 </text>
+        <image class="l-icon  q-icon" backgrond-size="100%" src="../../image/right.png"></image>
+      </view>
+    </view>
+    <view class="list">
+      <image class="l-icon" background-size="100%" style="width:35rpx" src="../../image/wx.png"></image>
+      <text class="l-add">wxid_03_liu</text>
+    </view>
+  </view>
+  <!--公司简介-->
+  <view class="jianjie">
+    <view class="gjtit">
+      <image class="titImg" src="../../image/note.png"></image>
+      <text class="tit">泰芒了简介</text>
+    </view>
+    <view class="gjWord">
+      <text class="txtWords" space="nbsp">有人说“人生不过兜兜转转，互相取暖”，也有人说“每一个不曾起舞的日子都是对生命的辜负”，那么是追求先来后到的命中注定还是随遇而安的平淡幸福？</text>
+      <text class="txtWords" space="nbsp">其实在甜品不断推陈出新的现在，人们对于它们的喜爱也像夏花般短暂，不是经典的搭配占据了先来后到的优势也是枉然。在类目众多的夏季单品中，醇厚新鲜的芒果搭配缠绵细腻的雪花冰在舌尖绽放，入口即化，被宠溺的幸福感浸润了所有的味蕾细胞。</text>
+      <text class="txtWords" space="nbsp">如果说经典搭配是芒果和沙冰众里寻他千百度的蓦然回首，那么这个夏天邂逅'最爱的人，带他来……斯利美，两只勺子在碗沿轻快奏乐，虽然晚了点遇见你，但好在余生都是你，清凉一夏完整一生！</text>
+      <text class="txtWords" space="nbsp">'泰芒了'采用了泰国优质泰芒。泰芒色、香、味俱佳，营养丰富，水份多，核小。其金色的外表释放出一种高雅的气质感，让人从外观就感觉出不同与一般芒果的品质。 汁甜如蜜，香味非常浓郁，肉质细滑鲜美，一口下去，满嘴是芒果的香味。
+     芒果属热带高档优质品种水果，果实外观美丽、肉质细嫩、有特殊风味，在国内外市场很受欢迎。 果实长卵形或椭球形，果肉香甜柔滑，味甜微酸，无纤维感，芒果色、香、味俱佳，营养丰富，含丰富维生素C，具有益胃、解渴、利尿的功用。
+</text>
+    </view>
+  </view>
+  <!--门店照片-->
+  <view class="shopImg">
+    <view class="gjtit">
+      <image class="titImg" src="../../image/pic1.png"></image>
+      <text class="tit">门店照片</text>
+    </view>
+    <view class="plist">
+      <view class="item" wx:key wx:for="{{lists}}">
+        <image class="item-img" bindtap="previewImage" mode="widthFix" src="{{item}}" data-src="{{item}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

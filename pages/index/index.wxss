@@ -1,0 +1,165 @@
+/* *index.wxss* */
+
+.head{
+  width:100%;
+  height:100rpx;  
+  box-sizing: border-box;
+  padding:0  20rpx;
+}
+.company{
+  width:100%;
+  height:100%;    
+}
+.name{
+  height:100%;
+  width:390rpx;
+  float:left; 
+  padding-top:20rpx;
+}
+.name .company-name{
+  font-size:30rpx;
+  color:#333;
+  display:block;
+}
+.name .information{
+  font-size:26rpx;
+  color:#555;
+  line-height:84rpx;
+  display:block;
+}
+.name .contact{
+  font-size:26rpx;
+  color:#888;
+  display:block;
+  margin-top:8rpx;
+}
+.userinfo-avatar{
+  width:262rpx;
+  height:140rpx;
+  float:right;
+}
+
+.alllist{
+  margin:8rpx 0;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.list{
+  display: flex;
+  margin: 20rpx 0;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+  }
+.l-add{
+  font-size: 26rpx;
+  flex: 1;
+  color:#222;
+  padding: 0 20rpx;
+}
+.textAdd{
+  /* width:410rpx; */
+  height:100%; 
+  display:block;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+.l-icon{
+  width: 30rpx;
+  height: 32rpx;
+  display: block;
+}
+q-icon{
+  width: 26rpx;
+  height: 26rpx;
+  display: block;
+}
+
+.telist{
+  display: flex;
+  margin:10rpx 0;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+
+}
+.jianjie{
+  width:100%;  
+  
+}
+.gjtit{ 
+  width:100%;
+  height:56rpx;
+  border-bottom:1px solid #d9d9d9;  
+  display: flex;  
+  flex-direction:row;  
+  align-items: center;
+  box-sizing: border-box;
+  padding:0  20rpx;    
+}
+.gjtit .tit{
+   font-size:26rpx;
+   color:#333;
+   padding-left:6rpx;
+}
+.titImg{
+  width:36rpx;
+  height:32rpx;
+}
+.gjWord{
+  width:100%;
+  box-sizing: border-box;
+  padding:20rpx 26rpx;  
+}
+.txtWords{
+  font-size:26rpx;
+  color:#222;
+  line-height:45rpx;
+  text-indent:24rpx;  
+  display: block;
+  padding-bottom: 18rpx;
+}
+.plist{
+  width:100%;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+   box-sizing:border-box;  
+  padding-top:20rpx; 
+   margin-bottom:5rpx;
+}
+.plist .item image{
+  width: 100%;
+  height:100%;
+  background: #ff0000;  
+}
+.plist .item{
+  flex: 0 0 30vw;
+  height: 30vw;
+  margin-bottom:16rpx;
+  overflow: hidden;
+}
+.plist .item:nth-of-type(2){
+  padding:0 15rpx;
+}
+.plist .item:nth-of-type(5){
+  padding:0 15rpx;
+}
+.plist .item:nth-of-type(8){
+  padding:0 15rpx;
+}
+swiper{
+  width:100%;
+  height:400rpx;  
+  margin-bottom:50rpx;
+}
+swiper-item{
+  width:100%;
+  height:100%;
+}
+swiper-item image{
+  width:100%;
+  height:100%;
+}
